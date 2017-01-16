@@ -4,4 +4,41 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>firstServlet</servlet-name> <!--имя сервлета (оно может быть любое) это имя является идентификатором, и должно быть уникальным-->
+    <servlet-class>servlets.FirstServlet</servlet-class> <!--полный пакетный путь к севрлету. После чего мы можем к нему обращаться по его name (идентификатор) (строка выше)-->
+  </servlet>
+
+  <servlet>
+    <servlet-name>secondServlet</servlet-name>
+    <servlet-class>servlets.SecondServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>logOutServlet</servlet-name>
+    <servlet-class>servlets.LogOutServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>firstServlet</servlet-name> <!--имя сервлета (идентификатор) который хотим замапить на определенный URL-->
+    <url-pattern>/firstServlet</url-pattern> <!--на какой URL мапить сервлет. "/" означает выход на один уровень выше-->
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>secondServlet</servlet-name>
+    <url-pattern>/secondServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>logOutServlet</servlet-name>
+    <url-pattern>/logOutServlet</url-pattern>
+  </servlet-mapping>
+
+  <!--начальные страницЫ-->
+  <welcome-file-list>
+    <welcome-file>firstPage.jsp</welcome-file>
+    <welcome-file>registration.html</welcome-file> <!--как я понял, сработает, если не найдет предыдущую-->
+  </welcome-file-list>
+
 </web-app>
