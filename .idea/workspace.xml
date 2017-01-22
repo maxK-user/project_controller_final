@@ -832,7 +832,7 @@
       <workItem from="1484587397872" duration="1445000" />
       <workItem from="1484923874688" duration="307000" />
       <workItem from="1484925694047" duration="138000" />
-      <workItem from="1485105091056" duration="849000" />
+      <workItem from="1485105091056" duration="918000" />
     </task>
     <task id="LOCAL-00001" summary="This is my deploying commit.">
       <created>1484428140915</created>
@@ -988,11 +988,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485105898011</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Deploy">
+      <created>1485106012975</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1485106012975</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17881000" />
+    <option name="totallyTimeSpent" value="17950000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
