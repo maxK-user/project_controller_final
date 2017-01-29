@@ -1,12 +1,17 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+
 <html>
+
 <head>
     <link href="<c:url value="/resources/css/home.css" />" rel="stylesheet">
     <title>Home</title>
 </head>
-<body>
 
+<body>
 
     <form class="box login">
         <fieldset class="boxBody">
@@ -21,7 +26,24 @@
         </footer>
     </form>
 
-    <p>3 The time on the server is ${serverTime}
+    <form:form method="POST" commandName="userAuthorizationData" action="check-user" class="box login">
+
+        <fieldset class="boxBody">
+
+            <form:label path="login">Name:</form:label>
+            <form:input path="login" />
+
+            <form:label path="password">Password:</form:label>
+            <form:password path="password"/>
+
+        </fieldset>
+
+        <footer> <label><input type="checkbox" tabindex="3">Keep me logged in</label>
+            <input type="submit" class="btnLogin" value="Login" tabindex="4">
+        </footer>
+
+    </form:form>
 
 </body>
+
 </html>
