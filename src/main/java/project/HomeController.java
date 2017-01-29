@@ -18,7 +18,7 @@ public class HomeController {
     /**
      * Simply selects the home view to render by returning its name.
      */
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET) // ВСІ ("/") запити типу GET потраплятимуть сюди
     public String home(Locale locale, Model model) {
 
         Date date = new Date();
@@ -26,9 +26,10 @@ public class HomeController {
 
         String formattedDate = dateFormat.format(date);
 
+        // кладу в атрибут дані formattedDate під назвою "serverTime", які зчитаю потім з jsp
         model.addAttribute("serverTime", formattedDate );
 
-        return "home";
+        return "home"; // відкриваємо home.jsp (в servlet-context.xml вказано де вони всі лежать (в /WEB-INF/views/))
     }
 
 }
