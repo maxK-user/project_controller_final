@@ -10,7 +10,7 @@
 
 <form class="box login">
     <fieldset class="boxBody">
-        <label>Username</label>
+        <label>Username2</label>
         <input type="text" tabindex="1" placeholder="username" required/>
         <label><a href="#" class="rLink" tabindex="5">Forget your password?</a>Password</label>
         <input type="password" tabindex="2" required placeholder="password"/>
