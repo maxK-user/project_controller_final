@@ -1,7 +1,7 @@
-package forDB;
+package project.forDB;
 
-import forDB.dao.CompanyDAO;
-import forDB.entities.Company;
+import project.forDB.dao.CompanyDAO;
+import project.forDB.entities.Company;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

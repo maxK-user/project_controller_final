@@ -1,4 +1,9 @@
-package servlets;
+package project.servlets;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import project.forDB.dao.CompanyDAO;
+import project.forDB.entities.Company;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -31,6 +36,16 @@ public class FirstServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        /////////////////////////////////////////////////////////////////
+        ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
+        CompanyDAO companyDAO = (CompanyDAO) context.getBean("companyDAO");
+
+        Company company = companyDAO.selectCompanyById(1);
+
+        System.out.println("if you see it, all is good))) :" + company);
+        ////////////////////////////////////////////////////////////////
+
+
         resp.setContentType("text/html");
 
         // парметр - это информация переданная от пользователем

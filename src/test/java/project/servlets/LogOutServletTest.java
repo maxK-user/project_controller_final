@@ -1,6 +1,4 @@
-package servlets;
-
-import static org.junit.Assert.*;
+package project.servlets;
 
 /**
  * Created by Maksim on 23.01.2017.

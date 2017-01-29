@@ -7,17 +7,17 @@
 
   <servlet>
     <servlet-name>firstServlet</servlet-name> <!--имя сервлета (оно может быть любое) это имя является идентификатором, и должно быть уникальным-->
-    <servlet-class>servlets.FirstServlet</servlet-class> <!--полный пакетный путь к севрлету. После чего мы можем к нему обращаться по его name (идентификатор) (строка выше)-->
+    <servlet-class>project.servlets.FirstServlet</servlet-class> <!--полный пакетный путь к севрлету. После чего мы можем к нему обращаться по его name (идентификатор) (строка выше)-->
   </servlet>
 
   <servlet>
     <servlet-name>secondServlet</servlet-name>
-    <servlet-class>servlets.SecondServlet</servlet-class>
+    <servlet-class>project.servlets.SecondServlet</servlet-class>
   </servlet>
 
   <servlet>
     <servlet-name>logOutServlet</servlet-name>
-    <servlet-class>servlets.LogOutServlet</servlet-class>
+    <servlet-class>project.servlets.LogOutServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>

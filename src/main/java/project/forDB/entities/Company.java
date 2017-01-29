@@ -1,4 +1,4 @@
-package forDB.entities;
+package project.forDB.entities;
 
 /**
  * Created by Maksim on 27.01.2017.
