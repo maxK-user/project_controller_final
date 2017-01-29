@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9182ab25-a0d8-4e88-aaf9-c1793e78560c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" />
     </list>
     <ignored path="newWebApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1150,7 +1149,7 @@
       <workItem from="1485700303259" duration="414000" />
       <workItem from="1485700896009" duration="1302000" />
       <workItem from="1485706883823" duration="31000" />
-      <workItem from="1485706991529" duration="765000" />
+      <workItem from="1485706991529" duration="781000" />
     </task>
     <task id="LOCAL-00001" summary="This is my deploying commit.">
       <created>1484428140915</created>
@@ -1446,11 +1445,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485707666710</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Deploy">
+      <created>1485707769606</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1485707769606</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60888000" />
+    <option name="totallyTimeSpent" value="60904000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
