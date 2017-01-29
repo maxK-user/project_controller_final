@@ -12,7 +12,7 @@
 </head>
 
 <body>
-
+<!--
     <form class="box login">
         <fieldset class="boxBody">
             <label>Username</label>
@@ -25,7 +25,7 @@
             <input type="submit" class="btnLogin" value="Login" tabindex="4">
         </footer>
     </form>
-
+-->
     <form:form method="POST" commandName="userAuthorizationData" action="check-user" class="box login">
 
         <fieldset class="boxBody">
