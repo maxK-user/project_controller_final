@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<p>Hello ${userAuthorizationData.name}!</p>
+<p>Hello ${userAuthorizationData.login}!</p>
 <p>Your password is  ${userAuthorizationData.password}!</p>
 
 
