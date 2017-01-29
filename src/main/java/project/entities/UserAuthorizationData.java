@@ -1,8 +1,5 @@
 package project.entities;
 
-/**
- * Created by Maksim on 29.01.2017.
- */
 public class UserAuthorizationData {
     private String login;
     private String password;

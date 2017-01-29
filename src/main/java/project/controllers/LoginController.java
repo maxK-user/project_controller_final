@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 import project.entities.UserAuthorizationData;
 
 @Controller
-public class HomeController {
+public class LoginController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET) // ВСІ ("/") запити типу GET потраплятимуть сюди
     public ModelAndView home(Locale locale, Model model) {
