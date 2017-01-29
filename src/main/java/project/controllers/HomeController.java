@@ -36,6 +36,7 @@ public class HomeController {
 
     @RequestMapping(value = "/check-user", method = RequestMethod.POST)
     public ModelAndView checkUser(@ModelAttribute("userAuthorizationData") UserAuthorizationData userAuthorizationData) {
+        System.out.println(userAuthorizationData);
         return new ModelAndView("main", "userAuthorizationData", userAuthorizationData);
     }
 
