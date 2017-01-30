@@ -4,6 +4,8 @@
 
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
+<!-- Всі ці файли знаходиться у папці WEB-INF, бо файли в ній приховані від прмого доступу користувача -->
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
@@ -15,34 +17,23 @@
 </head>
 
 <body>
-<!--
-    <form class="box login">
-        <fieldset class="boxBody">
-            <label>Username</label>
-            <input type="text" tabindex="1" placeholder="username" required/>
-            <label><a href="#" class="rLink" tabindex="5">Forget your password?</a>Password</label>
-            <input type="password" tabindex="2" required placeholder="password"/>
-        </fieldset>
-        <footer>
-            <label><input type="checkbox" tabindex="3">Keep me logged in</label>
-            <input type="submit" class="btnLogin" value="Login" tabindex="4">
-        </footer>
-    </form>
--->
+
     <form:form method="POST" commandName="userAuthorizationData" action="check-user" class="box login">
 
         <fieldset class="boxBody">
 
-            <form:label path="login">Name:</form:label>
-            <form:input path="login" />
+            <form:label path="login">Login:</form:label>
+            <form:input path="login" placeholder="login"/>
+            <form:errors path="login" cssClass="error"/>
 
             <form:label path="password">Password:</form:label>
-            <form:password path="password"/>
+            <form:password path="password" placeholder="password"/>
+            <form:errors path="password" cssClass="error"/>
 
         </fieldset>
 
         <footer>
-            <input type="submit" class="btnLogin" value="Login" tabindex="4">
+            <input type="submit" class="btnLogin" value="Login">
         </footer>
 
     </form:form>
