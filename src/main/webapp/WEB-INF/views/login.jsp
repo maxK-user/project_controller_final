@@ -18,8 +18,8 @@
 
 <body>
 
-<input type="button" value="First text" onClick="location.href='showFirstText.html'" />
-<a href="showSecondText.htm">Second text</a>
+    <input type="button" value="First text (click)" onClick="location.href='showFirstText'" />
+    <a href="showSecondText">Second text (click)</a>
 
     <form:form method="POST" commandName="userAuthorizationData" action="check-user" class="box login">
 

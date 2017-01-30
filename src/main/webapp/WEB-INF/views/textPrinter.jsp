@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <p>Hello ${text}!</p>
+    <p>Text: "${text}"</p>
 </body>
 
 </html>
