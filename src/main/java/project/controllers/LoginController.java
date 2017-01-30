@@ -73,18 +73,6 @@ public class LoginController {
 
     }
 
-    @RequestMapping(value = "/submit", method = RequestMethod.GET, params = "addToCart")
-    public String superAction(Model model){
-        //model.addAttribute("text", "superAction");
-        return "main";
-    }
-
-    @RequestMapping(value = "/loanbooks.htm", method = RequestMethod.GET, params = "favourite")
-    public String addToCart(Model model) {
-        //model.addAttribute("text", "superAction");
-        return "main";
-    }
-
     /*
         якщо треба, наприклад, перевірити дані мід відповіддю з jsp і до їх потрапляння в контроллер,
         або піся відповіді з контроллера і до того як вони прийдуть в jsp,
