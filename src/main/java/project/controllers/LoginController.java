@@ -62,6 +62,12 @@ public class LoginController {
         return "main";
     }
 
+    @RequestMapping(value = "/SpringBookLibrarySystem/loanbooks.htm", method = RequestMethod.GET)
+    public String loanBooks(Model model){
+        return "main";
+
+    }
+
     @RequestMapping(value = "/submit", method = RequestMethod.GET, params = "superButton")
     public String superAction(Model model){
         model.addAttribute("text", "superAction");

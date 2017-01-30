@@ -21,6 +21,8 @@
 <button class="btn btn-primary" type="submit" name="addToCart">Add</button>
 <button class="btn btn-secondary" type="submit" name="favourite" onclick="location.href=submit"><jsp:text /> Favourite This!</button>
 
+<a href="/SpringBookLibrarySystem/loanbooks.htm">Loan Books</a>
+
     <form:form method="POST" commandName="userAuthorizationData" action="check-user" class="box login">
 
         <fieldset class="boxBody">
