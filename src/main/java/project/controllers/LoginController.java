@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import project.entities.UserAuthorizationData;
+import project.services.WorkWithCompany;
 
 import javax.validation.Valid;
 
@@ -64,7 +65,11 @@ public class LoginController {
 
     @RequestMapping(value = "showFirstText", method = RequestMethod.GET)
     public String showFirstText(Model model) {
-        model.addAttribute("text", "First text ;)");
+
+        WorkWithCompany workWithCompany = new WorkWithCompany();
+        String companyAsString = workWithCompany.getCompanyById(1);
+
+        model.addAttribute("text", companyAsString);
         return "textPrinter";
     }
 
