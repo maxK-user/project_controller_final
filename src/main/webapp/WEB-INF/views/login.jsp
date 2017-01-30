@@ -18,7 +18,7 @@
 
 <body>
 
-<input type="button" value="add" name="addVendor" onClick="location.href='addVendor.html'" />
+<input type="button" value="add" name="text1" onClick="location.href='showText.html'" />
 <a href="/SpringBookLibrarySystem/loanbooks.htm">Loan Books</a>
 
     <form:form method="POST" commandName="userAuthorizationData" action="check-user" class="box login">

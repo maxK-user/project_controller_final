@@ -62,9 +62,10 @@ public class LoginController {
         return "main";
     }
 
-    @RequestMapping(value = "/addVendor", method = RequestMethod.GET)
-    public String addVendor() {
-        return "main";
+    @RequestMapping(value = "/showText", method = RequestMethod.GET, params = "text1")
+    public String addVendor(Model model) {
+        model.addAttribute("text", "First text ;)");
+        return "textPrinter";
     }
 
     @RequestMapping(value = "/SpringBookLibrarySystem/loanbooks.htm", method = RequestMethod.GET)
@@ -72,6 +73,18 @@ public class LoginController {
         return "main";
 
     }
+
+    /*@RequestMapping(value = "/submit", method = RequestMethod.GET, params = "addToCart")
+    public String superAction(Model model){
+        //model.addAttribute("text", "superAction");
+        return "main";
+    }
+
+    @RequestMapping(value = "/loanbooks.htm", method = RequestMethod.GET, params = "favourite")
+    public String addToCart(Model model) {
+        //model.addAttribute("text", "superAction");
+        return "main";
+    }*/
 
     /*
         якщо треба, наприклад, перевірити дані мід відповіддю з jsp і до їх потрапляння в контроллер,
