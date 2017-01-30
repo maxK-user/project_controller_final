@@ -21,10 +21,12 @@
 <button type="submit" name="addToCart">Add</button>
 <button type="submit" name="favourite">Favourite This!</button>
 
+<input type="button" value="add" name="addVendor" onClick="location.href='addVendor.html'" />
+
 <form:form method="post" action="/firstSpring/saveVendor.html" modelAttribute="vendor">
 <table border="1">
     <tr>
-        <td><input type="button" value="add" name="addVendor" onClick="location.href='addVendor.html'" /></td>
+        <td>
         <td><input type="submit" value="save" /></td>
     </tr>
     </form:form>
