@@ -24,8 +24,6 @@
 <form:form method="post" action="/firstSpring/saveVendor.html" modelAttribute="vendor">
 <table border="1">
     <tr>
-        <td><form:label path="vendorId">VendorId:</form:label></td>
-        <td><form:input path="vendorId" value=""/></td>
         <td><input type="button" value="add" name="addVendor" onClick="location.href='addVendor.html'" /></td>
         <td><input type="submit" value="save" /></td>
     </tr>
