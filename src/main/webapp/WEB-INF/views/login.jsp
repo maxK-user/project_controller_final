@@ -38,6 +38,11 @@
 
     </form:form>
 
+    <%--<button type="submit" name="superButton">Click me ;)</button>--%>
+    <input type="number" value="1" name="quantity" class="input-mini"/>
+    <button class="btn btn-primary" type="submit" name="addToCart"><i class="icon-shopping-cart icon-white"><jsp:text /></i> Add</button>
+    <button class="btn btn-secondary" type="submit" name="favourite"><jsp:text /> Favourite This!</button>
+
 </body>
 
 </html>

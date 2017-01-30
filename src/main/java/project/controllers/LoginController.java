@@ -62,6 +62,19 @@ public class LoginController {
         return "main";
     }
 
+    @RequestMapping(value = "/submit", method = RequestMethod.POST, params = "superButton")
+    public String superAction(Model model){
+        model.addAttribute("text", "superAction");
+        return "textPrinter";
+    }
+
+    @RequestMapping(value = "/submit", method = RequestMethod.POST, params = "addToCart")
+    public String addToCart(Model model) {
+        //your code
+        model.addAttribute("text", "superAction");
+        return "textPrinter";
+    }
+
     /*
         якщо треба, наприклад, перевірити дані мід відповіддю з jsp і до їх потрапляння в контроллер,
         або піся відповіді з контроллера і до того як вони прийдуть в jsp,
