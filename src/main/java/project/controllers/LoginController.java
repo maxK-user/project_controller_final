@@ -62,15 +62,16 @@ public class LoginController {
         return "main";
     }
 
-    @RequestMapping(value = "/showText", method = RequestMethod.GET, params = "text1")
+    @RequestMapping(value = "/showFirstText", method = RequestMethod.GET)
     public String addVendor(Model model) {
         model.addAttribute("text", "First text ;)");
         return "textPrinter";
     }
 
-    @RequestMapping(value = "/SpringBookLibrarySystem/loanbooks.htm", method = RequestMethod.GET)
+    @RequestMapping(value = "showSecondText", method = RequestMethod.GET)
     public String loanBooks(Model model){
-        return "main";
+        model.addAttribute("text", "Second text ;)");
+        return "textPrinter";
 
     }
 

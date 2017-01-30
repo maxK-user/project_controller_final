@@ -18,8 +18,8 @@
 
 <body>
 
-<input type="button" value="add" name="text1" onClick="location.href='showText.html'" />
-<a href="/SpringBookLibrarySystem/loanbooks.htm">Loan Books</a>
+<input type="button" value="First text" onClick="location.href='showFirstText.html'" />
+<a href="showSecondText.htm">Second text</a>
 
     <form:form method="POST" commandName="userAuthorizationData" action="check-user" class="box login">
 
