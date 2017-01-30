@@ -51,7 +51,7 @@ public class LoginController {
         // Ну і не забути ще в jsp вказати виведення помилок.
 
         // саме в такій ситуації важливо, щоб в методі аргумен BindingResult йшов відразу наступним після аргументу
-        // об'єкту що ми отрмуємо із jsp (UserAuthorizationData)
+        // об'єкту що ми отрмуємо із jsp (UserAuthorizationData). Детальніше це пояснюється в уроці 54.
 
         if(bindingResult.hasErrors()){
             return "login";
