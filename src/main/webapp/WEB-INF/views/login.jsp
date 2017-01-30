@@ -19,7 +19,17 @@
 <body>
 
 <button type="submit" name="addToCart">Add</button>
-<button type="submit" name="favourite" onclick="location.href=submit">Favourite This!</button>
+<button type="submit" name="favourite">Favourite This!</button>
+
+<form:form method="post" action="/firstSpring/saveVendor.html" modelAttribute="vendor">
+<table border="1">
+    <tr>
+        <td><form:label path="vendorId">VendorId:</form:label></td>
+        <td><form:input path="vendorId" value=""/></td>
+        <td><input type="button" value="add" name="addVendor" onClick="location.href='addVendor.html'" /></td>
+        <td><input type="submit" value="save" /></td>
+    </tr>
+    </form:form>
 
 <a href="/SpringBookLibrarySystem/loanbooks.htm">Loan Books</a>
 

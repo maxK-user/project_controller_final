@@ -62,6 +62,11 @@ public class LoginController {
         return "main";
     }
 
+    @RequestMapping(value = "/addVendor", method = RequestMethod.GET)
+    public String addVendor() {
+        return "main";
+    }
+
     @RequestMapping(value = "/SpringBookLibrarySystem/loanbooks.htm", method = RequestMethod.GET)
     public String loanBooks(Model model){
         return "main";
@@ -74,7 +79,7 @@ public class LoginController {
         return "main";
     }
 
-    @RequestMapping(value = "/submit", method = RequestMethod.GET, params = "favourite")
+    @RequestMapping(value = "/loanbooks.htm", method = RequestMethod.GET, params = "favourite")
     public String addToCart(Model model) {
         //model.addAttribute("text", "superAction");
         return "main";
