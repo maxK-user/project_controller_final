@@ -68,16 +68,15 @@ public class LoginController {
 
     }
 
-    @RequestMapping(value = "/submit", method = RequestMethod.GET, params = "superButton")
+    @RequestMapping(value = "/submit", method = RequestMethod.GET, params = "addToCart")
     public String superAction(Model model){
-        model.addAttribute("text", "superAction");
+        //model.addAttribute("text", "superAction");
         return "main";
     }
 
-    @RequestMapping(value = "/submit", method = RequestMethod.GET, params = "addToCart")
+    @RequestMapping(value = "/submit", method = RequestMethod.GET, params = "favourite")
     public String addToCart(Model model) {
-        //your code
-        model.addAttribute("text", "superAction");
+        //model.addAttribute("text", "superAction");
         return "main";
     }
 
