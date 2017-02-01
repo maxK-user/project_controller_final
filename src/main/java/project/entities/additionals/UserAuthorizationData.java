@@ -1,12 +1,9 @@
-package project.entities;
+package project.entities.additionals;
 
 import javax.validation.constraints.Size;
 
 public class UserAuthorizationData {
-    /*
-    http://docs.jboss.org/hibernate/stable/validator/reference/en-US/html_single/#validator-defineconstraints-spec
-    розділ 2.3.1 і 2.3.2 - показані всі можливі варіанти валідації (і є можливіть вставити власний regexp)
-    */
+
     @Size(min = 5, max = 15, message = "Login must contains from 5 to 15 symbols")
     private String login;
 
@@ -16,7 +13,8 @@ public class UserAuthorizationData {
     public UserAuthorizationData() {
     }
 
-    public UserAuthorizationData(String login, String password) {
+    public UserAuthorizationData(/*long id, */String login, String password) {
+        //this.id = id;
         this.login = login;
         this.password = password;
     }
